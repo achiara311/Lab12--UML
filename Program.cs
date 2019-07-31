@@ -15,7 +15,6 @@ namespace UML
             };
         static void Main(string[] args)
         {
-            
             bool repeat = true;
             while(repeat)
             {
@@ -27,8 +26,6 @@ namespace UML
                 string input = Console.ReadLine();
                 if (input == "y")
                 {
-                    
-                   // Display();
                     repeat = true;
                 }
                 else if (input == "n")
@@ -37,9 +34,7 @@ namespace UML
                     Console.WriteLine("Goodbye!");
                     break;
                 }
-
             }
-           
         }
 
         public static void Display()
@@ -50,8 +45,7 @@ namespace UML
             }
         }
         public static void AddToList()
-        {
-            
+        { 
             Console.WriteLine("Staff or Student?");
             string response = Console.ReadLine().ToLower();
             if(response == "staff")
@@ -100,10 +94,8 @@ namespace UML
                 countTwo++;
                 Display();
             }
-
         }
-
-    }
+     }
 }
 
 //Staff staff = new Staff(); //allowed because OF DEFAULT CONSTRUCTOR
