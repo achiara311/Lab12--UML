@@ -1,0 +1,11 @@
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.csprojAssemblyReference.cache
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.csproj.CoreCompileInputs.cache
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.AssemblyInfoInputs.cache
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.AssemblyInfo.cs
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\bin\Debug\netcoreapp2.2\UML.deps.json
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\bin\Debug\netcoreapp2.2\UML.runtimeconfig.json
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\bin\Debug\netcoreapp2.2\UML.runtimeconfig.dev.json
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\bin\Debug\netcoreapp2.2\UML.dll
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\bin\Debug\netcoreapp2.2\UML.pdb
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.dll
+C:\Users\achia\OneDrive\Desktop\LabsWeekThree\UML\obj\Debug\netcoreapp2.2\UML.pdb
