@@ -15,20 +15,23 @@ namespace UML
             };
         static void Main(string[] args)
         {
-            Display();
-            AddToList();
+            
             bool repeat = true;
             while(repeat)
             {
-                Console.WriteLine("Add new member? y/n");
+                Display();
+                AddToList();
+                Console.Clear();
+                Display();
+                Console.WriteLine("\nAdd new member? y/n\n");
                 string input = Console.ReadLine();
-                if (Console.ReadLine() == "y")
+                if (input == "y")
                 {
-                    AddToList();
-                    Display();
+                    
+                   // Display();
                     repeat = true;
                 }
-                else if (Console.ReadLine() == "n")
+                else if (input == "n")
                 {
                     Display();
                     Console.WriteLine("Goodbye!");
@@ -49,7 +52,7 @@ namespace UML
         public static void AddToList()
         {
             
-            Console.WriteLine("Staff or student?");
+            Console.WriteLine("Staff or Student?");
             string response = Console.ReadLine().ToLower();
             if(response == "staff")
             {
@@ -70,7 +73,7 @@ namespace UML
                 people.Add(staff);
                 //cause its private, passed 
                 //through parameters
-                Display();
+                //Display();
                 
             }
             else if (response == "student")
