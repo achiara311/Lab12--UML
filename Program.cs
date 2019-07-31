@@ -15,27 +15,27 @@ namespace UML
             };
         static void Main(string[] args)
         {
-           
-            
-                Display();
-                AddToList();
+            Display();
+            AddToList();
+            bool repeat = true;
+            while(repeat)
+            {
                 Console.WriteLine("Add new member? y/n");
                 string input = Console.ReadLine();
                 if (Console.ReadLine() == "y")
                 {
                     AddToList();
                     Display();
-
+                    repeat = true;
                 }
-                else
+                else if (Console.ReadLine() == "n")
                 {
+                    Display();
                     Console.WriteLine("Goodbye!");
-                   
+                    break;
                 }
-                Display();
-            
-                
-            
+
+            }
            
         }
 
@@ -48,7 +48,7 @@ namespace UML
         }
         public static void AddToList()
         {
-            int count = 0;
+            
             Console.WriteLine("Staff or student?");
             string response = Console.ReadLine().ToLower();
             if(response == "staff")
@@ -59,6 +59,7 @@ namespace UML
                 Console.WriteLine("Address: ");
                 string address = Console.ReadLine();
 
+
                 Console.WriteLine("Enter school.");
                 string school = Console.ReadLine();
 
@@ -66,11 +67,11 @@ namespace UML
                 double pay = double.Parse(Console.ReadLine());
 
                 Staff staff = new Staff(school, pay, name, address);
-                
+                people.Add(staff);
                 //cause its private, passed 
                 //through parameters
+                Display();
                 
-                count++;
             }
             else if (response == "student")
             {
@@ -84,12 +85,17 @@ namespace UML
                 Console.WriteLine("Enter school.");
                 string school = Console.ReadLine();
 
+                Console.WriteLine("Enter Year");
+                string year = Console.ReadLine();
+                int inputYear = int.Parse(year);
+
                 Console.WriteLine("Enter fee. ");
                 double fee = double.Parse(Console.ReadLine());
 
-                Student student = new Student("Grand Circus", 2000, 55, "Jill", "80109 Dragon Stone.");
-                student.GetType();
+                Student student = new Student(school, inputYear, fee, name, address);
+                people.Add(student);
                 countTwo++;
+                Display();
             }
 
         }
